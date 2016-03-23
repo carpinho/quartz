@@ -13,6 +13,7 @@ import java.util.Date;
  
 /**
  * Created by muhamadto on 6/9/15.
+ * Editeds by Victor
  */
 public class QuartzJob implements Job {
     private static final Logger LOGGER =  LoggerFactory.getLogger(QuartzJob.class);
