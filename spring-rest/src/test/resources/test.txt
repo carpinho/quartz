@@ -1,0 +1,37 @@
+@RequestMapping – by Path
+curl -i http://localhost:8080/spring-rest/ex/foos
+
+@RequestMapping – the HTTP Method
+curl -i -X POST http://localhost:8080/spring-rest/ex/foos
+
+@RequestMapping with the headers attribute
+curl -i -H "key:val" http://localhost:8080/spring-rest/ex/foos
+
+@RequestMapping Consumes and Produces
+curl -H "Accept:application/json,text/html" http://localhost:8080/spring-rest/ex/foos
+curl -H "Accept:application/json" http://localhost:8080/spring-rest/ex/foos
+
+@RequestMapping Single @PathVariable
+curl http://localhost:8080/spring-rest/ex/foos/1
+
+@RequestMapping Multiple @PathVariable
+curl http://localhost:8080/spring-rest/ex/foos/1/bar/2
+
+@RequestMapping @PathVariable with RegEx
+curl http://localhost:8080/spring-rest/ex/bars/1
+
+@RequestMapping @RequestParam annotation
+curl http://localhost:8080/spring-rest/ex/bars?id=100
+curl -i -d id=100 http://localhost:8080/spring-rest/ex/bars
+
+@RequestMapping define params
+http://localhost:8080/spring-rest/ex/bars?id=100&second=something
+
+@RequestMapping – multiple paths mapped to the same controller method
+curl -i http://localhost:8080/spring-rest/ex/advanced/foos
+curl -i http://localhost:8080/spring-rest/ex/advanced/bars
+
+@RequestMapping – multiple HTTP request methods to the same controller method
+curl -i -X POST http://localhost:8080/spring-rest/ex/foos/multiple
+curl -i -X PUT http://localhost:8080/spring-rest/ex/foos/multiple
+
