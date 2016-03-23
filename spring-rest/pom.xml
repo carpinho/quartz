@@ -10,7 +10,7 @@
 
 	<dependencies>
 
-		<!-- Spring NOse eneas 5-->
+		<!-- Spring NOse eneas 7-->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
