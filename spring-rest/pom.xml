@@ -10,7 +10,7 @@
 
 	<dependencies>
 
-		<!-- Spring -->
+		<!-- Spring NOse -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
