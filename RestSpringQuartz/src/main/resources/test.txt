@@ -1,0 +1,12 @@
+curl http://localhost:8080/RestSpringQuartz/programacion/isGet?job=job01&group=group01&mills=1457021220000
+curl -i -X POST http://localhost:8080/RestSpringQuartz/programacion/isPost
+
+curl http://localhost:8080/RestSpringQuartz/programacion/getProgramas
+
+http://localhost:8080/RestSpringQuartz/programacion/getPrograma?canal=VictorChanel&codParrilla=003V&producto=007V&geo=0&nombre=NoticiasDiv&fechaInicio=2016-02-29&horaInicio=16:50&fechaFin=2016-02-29&horaFin=17:00
+curl -i -d canal=VictorChanel -d codParrilla=003 -d producto=007 -d geo=0 -d nombre=NoticiasVic -d fechaInicio=2016-02-29 -d horaInicio=16:50 -d fechaFin=2016-02-29 -d horaFin=17:00 -X POST http://localhost:8080/RestSpringQuartz/programar/setPrograma
+curl -i -d canal=VictorChanel -d codParrilla=003 -d producto=007 -d geo=0 -d nombre=NoticiasVic -d fechaInicio=2016-02-29 -d horaInicio=16:50 -d fechaFin=2016-02-29 -d horaFin=17:00 -X POST http://localhost:8080/RestSpringQuartz/programar/setPrograma
+
+curl -i -d xml=Hola -X POST http://localhost:8080/RestSpringQuartz/programacion/eneas
+curl -i -X POST http://localhost:8080/RestSpringQuartz/programacion/programar
+curl -i -d canal=telecinco -d descripcion=publicidadVictor456 -X POST http://localhost:8080/RestSpringQuartz/programacion/publicidad
