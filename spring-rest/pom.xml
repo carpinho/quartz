@@ -9,8 +9,8 @@
 	<packaging>war</packaging>
 
 	<dependencies>
-
-		<!-- Spring NOse eneas 6-->
+	
+		<!-- Spring NOse eneas 8-->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
